@@ -1,0 +1,40 @@
+# 1.5 Why JS 2
+
+    1. three.js 
+    - 흥미로운 사이트로 html, css, js로만 이루어진 사이트를 보여주는 곳으로 생각됨. 
+    흥미로운 아이디어들이 많으니 한 번 들어가볼만 하다고 생각이 듦. 
+
+    2. React native 
+    - 웹 이외에도 이것을 통하게 하는 것으로 이해. 
+
+    3. 일렉트로 
+    - 컴퓨터 앱으로 만드는 것을 돕는다. 큰 예시로는 vscode도 이에 속한다. 
+    - 역시 html, css, js로만 이루어짐. 
+
+    4. 3d에서 지원하는 것이 많음으로 js로 만드는 것이 나쁘지 않다. 
+    + 머신러닝도 가능 -> 좋은지는 의문이지만
+    + 실시간으로 작동하는 무엇인가도 좋음. 
+
+# 1.6 Online IDE
+
+    1. replit
+
+# 2.0 Your First JS Project
+
+    1. js나 css를 단순히 브라우저로 열면 코드만 보이고 작동하는 부분이 없음. 
+    -> 단순히 켜볼 생각을 안해봐서 처음 봄. 
+    -> html이 접착제라고 설명 중. -> 나는 건물의 뼈대라고 생각한다. 
+
+    2. css, js 엔진 두 개가 돌아가고 있다. 
+
+    3. <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    - http-equiv : http 해더에 정보를 제공하는 것. 
+    ex) content-security-policy : 문서에 대한 콘텐츠 보안정책을 명시한다. 
+        content-type : 문서의 character 인코딩을 명시한다. 
+        default-style : 사용할 스타일 시트를 명시한다. 
+
+    - x-ua-compatible : 크로스 브라우징 문제로 IE(인터넷 익스프로러)를 사용할 때는 
+    가장 최신의 표준문서를 사용하라는 내용을 명시하고 있다. 
+    
+    - compatible : 호환
+
