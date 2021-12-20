@@ -1,0 +1,26 @@
+js를 처음부터 들으려니 시간적 손실이 너무 심하다. 
+밑에 적은 챕터는 지나가기로 결정
+# 2.2 Variables
+# 2.3 const and let
+# 2.4 Booleans
+# 2.5 Arrays
+# 2.9 Recap
+# 2.10 Recap 2
+# 2.11 Returns
+# 2.12 Recap
+# 2.13 Conditionals
+# 2.14 Conditionals part Two
+# 2.15 Conditionals part Three
+# 2.16 Recap
+
+# 2.6 Objects
+
+    1. const Object의 할당을 보여줌, 추가한 후에 할당하는 것도 가능함. 
+
+# 2.7 Functions part One 
+
+# 2.2 Functions part Two
+
+# 2.9 Recap
+
+    1. Recap은 배운 내용을 짧게 복습하는 챕터다. 
