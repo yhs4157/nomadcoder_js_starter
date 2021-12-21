@@ -16,3 +16,8 @@
  - link 타고 들어가는 것을 막음. -> alert()를 통해 ok를 누르기 전까지는 작동되지 않게
  만들어 놓음. 
  - a를 anchor라고 부르고 있음. 
+
+# 4.4 Getting Username
+ - 제출 후에 username이 form에서 사라지기를 원함. 
+ - form을 제거
+  - css에서 특정 조건에 display: none;을 하도록 만듦. 

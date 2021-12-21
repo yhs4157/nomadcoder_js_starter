@@ -1,5 +1,9 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("input"); 
+const greeting = document.querySelector("#greeting"); 
+
+const HIDDEN_CLASSNAME = "hidden"; 
+
 /*
 # 4.0 Input value
 위와 동일
@@ -9,8 +13,13 @@ const loginButton = document.querySelector("#login-form button");
 
 function handleLoginSubmit(e) {
     e.preventDefault(); 
+    loginForm.classList.add(HIDDEN_CLASSNAME); 
     const username = loginInput.value; 
-    console.log(username); 
+    //greeting.innerText = "Hello " + username; 
+    // 조금 더 간소화하는 방법
+    // 대신 ``(백틱)을 사용. option + ₩, 혹은 영어상태에서 ₩
+    greeting.innerText = `Hello ${username}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME); 
 }
 
 /*
@@ -50,6 +59,7 @@ loginForm.addEventListener("submit", handleLoginSubmit);
     -> 특정 부분이 제출 후에는 새로고침을 동작하게 만든다. 
 */
 
+/*
 function handleLinkClick(event) {
     event.preventDefault(); 
     console.log(event); 
@@ -57,10 +67,9 @@ function handleLinkClick(event) {
 }
 
 const link = document.querySelector("a"); 
-link.addEventListener("click", handleLinkClick); 
 
-/*
 # 4.3 
     결국 중요한 것은 handleLinkClick은 단순히 작동하는 것이 아니라
     브라우저가 특정 과정을 거쳐서 작동시킨다는 것. 
 */
+
