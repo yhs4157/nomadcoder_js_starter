@@ -32,3 +32,5 @@
  localStorage.removeItem()
  - 저장은 되었으나 아직 새로고침에서 이루어지는 form 생성은 그대로임. 약간의 변화가 더 필요함. 
 
+# 4.6 Loading Username
+ - if else문 + HTML에서 class="hidden"으로 처리하는 등을 통해 간단하게 해결

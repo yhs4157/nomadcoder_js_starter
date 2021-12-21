@@ -3,6 +3,7 @@ const loginInput = loginForm.querySelector("input");
 const greeting = document.querySelector("#greeting"); 
 
 const HIDDEN_CLASSNAME = "hidden"; 
+const USERNAME_KEY = "username"; 
 
 /*
 # 4.0 Input value
@@ -18,9 +19,8 @@ function handleLoginSubmit(e) {
     //greeting.innerText = "Hello " + username; 
     // 조금 더 간소화하는 방법
     // 대신 ``(백틱)을 사용. option + ₩, 혹은 영어상태에서 ₩
-    localStorage.setItem("username", username);
-    greeting.innerText = `Hello ${username}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME); 
+    localStorage.setItem(USERNAME_KEY, username);
+    paintGreetings(username); 
 }
 
 /*
@@ -44,8 +44,6 @@ if(username === "") {
     loginButton.addEventListener("click", handleLoginBtnClick); 
     - HTML에서 처리하였기에 필요로 하지 않음. 
 */
-
-loginForm.addEventListener("submit", handleLoginSubmit); 
 
 /*
 # 4.2 Events
@@ -74,3 +72,16 @@ const link = document.querySelector("a");
     브라우저가 특정 과정을 거쳐서 작동시킨다는 것. 
 */
 
+function paintGreetings(username) {
+    greeting.innerText = `Hello ${username}`;   
+    greeting.classList.remove(HIDDEN_CLASSNAME); 
+}
+
+const savedUsername = localStorage.getItem(USERNAME_KEY); 
+
+if(savedUsername === null) {
+    loginForm.classList.remove(HIDDEN_CLASSNAME); 
+    loginForm.addEventListener("submit", handleLoginSubmit); 
+} else {
+    paintGreetings(savedUsername); 
+}
