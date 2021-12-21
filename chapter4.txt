@@ -1,0 +1,9 @@
+# 4.0 Input value
+ - 기본적인 Input element를 작성하고 button click에 따라서 console.log()를 진행하자. 
+
+# 4.1 Form Submission
+ - console.log()에 들어갈 username이 null이 되지 않도록 그리고 너무 길지 않도록 제어하자. 
+ - 유효성 검사 required는 form으로 감싸진 형태에서 작동함. 
+ - HTML에서 거의 모든 일을 처리해냈음. 
+
+ 
