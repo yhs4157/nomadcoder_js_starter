@@ -1,7 +1,5 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("input"); 
-const loginButton = loginForm.querySelector("button"); 
-
 /*
 # 4.0 Input value
 위와 동일
@@ -9,14 +7,15 @@ const loginInput = document.querySelector("#login-form input");
 const loginButton = document.querySelector("#login-form button");
 */
 
-function handleLoginBtnClick() {
+function handleLoginSubmit(e) {
+    e.preventDefault(); 
     const username = loginInput.value; 
     console.log(username); 
 }
 
 /*
 # 4.0 Input value
-input.value는 default로 들어가게 되는 값이다. 
+    input.value는 default로 들어가게 되는 값이다. 
 */
 
 /*
@@ -32,6 +31,23 @@ if(username === "") {
 
 /*
 # 4.1 Form Submission 
-loginButton.addEventListener("click", handleLoginBtnClick); 
-- HTML에서 처리하였기에 필요로 하지 않음. 
+    loginButton.addEventListener("click", handleLoginBtnClick); 
+    - HTML에서 처리하였기에 필요로 하지 않음. 
 */
+
+loginForm.addEventListener("submit", handleLoginSubmit); 
+
+/*
+# 4.2 Events
+    handleLoginSubmit -> 자동 실행을 의미하지 않음. 
+    handleLoginSubmit() -> 자동 실행을 의미함. 
+
+    아무것도 없는 것처럼 보이더라도 handleLoginSubmit에는 argument를 넘겨주고 있음. 
+    함수에 필요한 데이터를 argument로 보내줌. 
+    ex) 이것의 html 주체, timestemp 등등. 
+
+    e.preventDefault(); 
+    -> 특정 부분이 제출 후에는 새로고침을 동작하게 만든다. 
+*/
+
+

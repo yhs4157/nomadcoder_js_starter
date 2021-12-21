@@ -6,4 +6,8 @@
  - 유효성 검사 required는 form으로 감싸진 형태에서 작동함. 
  - HTML에서 거의 모든 일을 처리해냈음. 
 
- 
+# 4.2 Events
+ - submit을 할 떄 console에서 나타났다가 사라짐. 일단 인식에는 성공함.  
+ - parameter vs argument 
+  : 정의된 값 , 실제로 전달되는 값. 
+ - event Object가 있음을 이해해야한다. 
