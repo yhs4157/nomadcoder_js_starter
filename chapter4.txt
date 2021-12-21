@@ -21,3 +21,14 @@
  - 제출 후에 username이 form에서 사라지기를 원함. 
  - form을 제거
   - css에서 특정 조건에 display: none;을 하도록 만듦. 
+
+# 4.5 Saving Username
+ - 새로고침을 할 때마다 새로 form을 작성하는 것이 너무 귀찮다고 함. 
+ - localStorage API를 사용. 
+ - 개발자 도구에서 Application에 들어가면 찾을 수 있음. 
+ ex) 
+ localStorage.setItem()
+ localStorage.getItem()
+ localStorage.removeItem()
+ - 저장은 되었으나 아직 새로고침에서 이루어지는 form 생성은 그대로임. 약간의 변화가 더 필요함. 
+

@@ -18,6 +18,7 @@ function handleLoginSubmit(e) {
     //greeting.innerText = "Hello " + username; 
     // 조금 더 간소화하는 방법
     // 대신 ``(백틱)을 사용. option + ₩, 혹은 영어상태에서 ₩
+    localStorage.setItem("username", username);
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME); 
 }
