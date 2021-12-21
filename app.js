@@ -1,11 +1,22 @@
-alert("hi"); 
+const loginForm = document.querySelector("#login-form");
+const loginInput = loginForm.querySelector("input"); 
+const loginButton = loginForm.querySelector("button"); 
 
-const a = document.getElementById("hello"); 
+/*
+# 4.0 Input value
+위와 동일
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+*/
 
-console.log(a); 
-console.dir(a); 
+function handleLoginBtnClick() {
+    console.log("hello", loginInput.value); 
+}
 
-const b = document.getElementById("hello"); 
+/*
+# 4.0 Input value
+input.value는 default로 들어가게 되는 값이다. 
+*/
 
-console.log(b); 
-console.dir(b); 
+loginButton.addEventListener("click", handleLoginBtnClick); 
+
