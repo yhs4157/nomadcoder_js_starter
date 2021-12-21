@@ -11,3 +11,8 @@
  - parameter vs argument 
   : 정의된 값 , 실제로 전달되는 값. 
  - event Object가 있음을 이해해야한다. 
+
+# 4.3 Events part Two
+ - link 타고 들어가는 것을 막음. -> alert()를 통해 ok를 누르기 전까지는 작동되지 않게
+ 만들어 놓음. 
+ - a를 anchor라고 부르고 있음. 

@@ -50,4 +50,17 @@ loginForm.addEventListener("submit", handleLoginSubmit);
     -> 특정 부분이 제출 후에는 새로고침을 동작하게 만든다. 
 */
 
+function handleLinkClick(event) {
+    event.preventDefault(); 
+    console.log(event); 
+    alert("clicked!!"); 
+}
 
+const link = document.querySelector("a"); 
+link.addEventListener("click", handleLinkClick); 
+
+/*
+# 4.3 
+    결국 중요한 것은 handleLinkClick은 단순히 작동하는 것이 아니라
+    브라우저가 특정 과정을 거쳐서 작동시킨다는 것. 
+*/
