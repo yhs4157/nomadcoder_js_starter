@@ -1,0 +1,9 @@
+# 6.0 Quotes
+
+    1. span 사용. 
+    - inline element
+    - 글자크기 만큼에 공간을 차지 
+    - 텍스트를 위한 element
+
+    2. 10개의 내용 중에 랜덤한 내용을 출력하도록 만듦. 
+    - random 함수를 사용. 
