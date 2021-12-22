@@ -1,0 +1,6 @@
+# 5.0 Intervals
+
+1. 모듈화를 통해 조금 더 정리된 코드를 구현. 
+
+2. Interval, timeout에 대한 설명
+ - MDN 튜토리얼에서 async관련된 챕터에서 설명되어 있음. 

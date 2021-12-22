@@ -34,3 +34,4 @@
 
 # 4.6 Loading Username
  - if else문 + HTML에서 class="hidden"으로 처리하는 등을 통해 간단하게 해결
+ 
