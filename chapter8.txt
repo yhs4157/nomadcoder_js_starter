@@ -4,3 +4,11 @@
 
     2. openweathermap.org API를 사용할 예정
 
+# 8.2 Weather API 
+
+    1. API 키를 코드 상에 잘 반영하는 방법도 찾아보아야 할것 같다. 
+
+    2. fetch() 함수 사용. network를 통해 확인할 수 있음. 
+    - Promise()로 이루어진 특수한 함수. 
+    - MDN tutorial에서 Promise에서 볼 수 있음. 
+
