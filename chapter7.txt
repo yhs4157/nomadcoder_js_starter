@@ -38,3 +38,12 @@
 # 7.5 Loading To Dos part Two 
 
 1. 새로운 추가하면 localStorage에도 영향을 주어야하는데 덮어쓰기를 해버림. 
+
+
+# 7.6 Deleting To Dos part One
+
+    1. 삭제에 대한 localStorage의 업데이트가 이루어 지지 않음. 
+    - 중복되는 부분은 어떻게 처리할 것인가? 즉, 같은 것 사이에서의 구별이 필요하다. 
+    - text 처리가 아닌 object 처리를 통해 작동하자
+    - 시퀀스 처리가 아닌 Date.now() 처리를 할려함. 
+
