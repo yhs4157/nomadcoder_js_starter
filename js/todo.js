@@ -12,7 +12,6 @@ function saveToDos() {
 
 function handleDeleteButton(event) {
     const li = event.target.parentElement; 
-    
     li.remove(); 
 }
 
@@ -60,3 +59,4 @@ if(savedToDos !== null) {
     toDos = parsedToDos; 
     parsedToDos.forEach(paintToDo);
 }
+

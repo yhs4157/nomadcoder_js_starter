@@ -47,3 +47,10 @@
     - text 처리가 아닌 object 처리를 통해 작동하자
     - 시퀀스 처리가 아닌 Date.now() 처리를 할려함. 
 
+# 7.7 Deleting To Dos part two
+
+    1. filter() 사용. forEach와 같게 array.length만큼 작동함. 
+
+    - filter() 함수에 대한 이야기가 많이 차지함으로 skip
+
+
