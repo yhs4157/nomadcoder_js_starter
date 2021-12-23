@@ -1,0 +1,6 @@
+# 8.0 Geolocation
+
+    1. navigator를 사용
+
+    2. openweathermap.org API를 사용할 예정
+
