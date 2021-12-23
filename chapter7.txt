@@ -8,8 +8,21 @@
 
 # 7.2 Deleting To Dos
 
-1. button을 클릭이 어느 것인지를 구별해야한다. 
- - 이 경우에 event를 사용한다. 
- - 필요로 하다면 console.log()를 통해 해당 값을 눈으로 보면서 이해할 것. 
- - console.dir()를 사용하는 것도 좋다. 
- - 사용하는 것은 parentNode를 사용할 것이다. 
+    1. button을 클릭이 어느 것인지를 구별해야한다. 
+    - 이 경우에 event를 사용한다. 
+    - 필요로 하다면 console.log()를 통해 해당 값을 눈으로 보면서 이해할 것. 
+    - console.dir()를 사용하는 것도 좋다. 
+    - 사용하는 것은 parentNode를 사용할 것이다. 
+
+# 7.3 Saving To Dos
+
+    1. 새로고침을 하면 생기는 리셋을 제거할 것. 
+    - 이전 login과 마찬가지로 localStorage를 사용할 생각. 
+    - 단순 텍스트로 저장되기에 배열로 변환할 기능을 만들어 주어야함. 
+    ex) input a, b, c; 
+        텍스트 - "a b c"
+        배열 - '["a", "b", "c"]'
+    - JSON.stringify()를 사용. 
+    -> 기존 형태를 유지한 채로 string 변환하는 것. 
+    -> 기존 형태인 배열을 지켜주었기에 사용하였다. 
+
