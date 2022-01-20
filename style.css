@@ -1,11 +1,76 @@
 body {
-  background-color: beige;
+  margin: 0;
+}
+
+#background {
+  height: 100vh;
+  weight: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   color: cornflowerblue;
+  display: inline-block;
+}
+#envirment {
+  display: grid;
+}
+#clock {
+  display: block;
+  color: white;
+  block-size: inherit;
+  display: inline-block;
+  font-size: 100px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+#weather {
+  color: white;
+  block-size: inherit;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-right: 30px;
+}
+
+#todo-form input {
+  width: 250px;
+}
+
+#blur-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
+  height: 80vh;
+  width: 500px;
+  padding: 30px 30px;
+  border-radius: 2;
+  padding: 0 0 0 0;
 }
 
 .hidden {
   display: none;
+}
+
+#todo-list li span {
+  color: gray;
+  text-align: left;
+}
+
+#todo-list li button {
+  text-align: right;
 }

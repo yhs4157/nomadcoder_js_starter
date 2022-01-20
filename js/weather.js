@@ -1,7 +1,13 @@
+const API_KEY = "88507e0f1d52130206a8ba6f9a939405"; 
+
 function onGeoOk(position) {
     const lat = position.coords.latitude; 
-    const long = position.coords.longtitude; 
-    const url = `address`;
+    const lng = position.coords.longitude; 
+    console.log(position); 
+    console.log(lat, lng); 
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`;
+    console.log(url); 
+    
     fetch(url)
     .then(response => response.json())
     .then(data =>{
@@ -9,7 +15,8 @@ function onGeoOk(position) {
         const city = document.querySelector("#weather span:last-child"); 
         city.innerText = data.name; 
         weather.innerText = `${data.weather[0].main} / ${data.main.temp}`; 
-    }); 
+    });
+    
 }
 function onGeoError() {
     alert("Can't find you. No weather for you.");
