@@ -9,6 +9,7 @@ let toDos = [];
 function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos)); 
 }
+// array에 대한 저장은 허용하고 있지 않기 때문에. 
 
 function handleDeleteButton(event) {
     const li = event.target.parentElement; 
@@ -58,6 +59,7 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if(savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos); 
+    // array에 대한 저장은 허용하고 있지 않기 때문에. 
     toDos = parsedToDos; 
     parsedToDos.forEach(paintToDo);
 }
