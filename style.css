@@ -21,10 +21,10 @@ h1 {
   display: grid;
 }
 #clock {
+  display: block;
   color: white;
   block-size: inherit;
   display: inline-block;
-  text-align: none;
   font-size: 100px;
   margin-bottom: 0px;
   margin-top: 30px;
@@ -66,6 +66,10 @@ h1 {
   display: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #todo-list li span {
   color: white;
   text-align: left;
@@ -73,4 +77,5 @@ h1 {
 
 #todo-list li button {
   text-align: right;
+  margin-left: 4px;
 }
