@@ -14,17 +14,17 @@ body {
 }
 
 h1 {
-  color: cornflowerblue;
+  color: white;
   display: inline-block;
 }
 #envirment {
   display: grid;
 }
 #clock {
-  display: block;
   color: white;
   block-size: inherit;
   display: inline-block;
+  text-align: none;
   font-size: 100px;
   margin-bottom: 0px;
   margin-top: 30px;
@@ -67,7 +67,7 @@ h1 {
 }
 
 #todo-list li span {
-  color: gray;
+  color: white;
   text-align: left;
 }
 
